@@ -2,7 +2,6 @@
   "name": "cosmic-chariots",
 
   "version": "0.1.0",
-  "lproxy": "http://localhost:3006",
   "proxy": "https://mjs-cosmic-chariots-app.herokuapp.com/",
 
   "private": true,
