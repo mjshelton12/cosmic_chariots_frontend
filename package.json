@@ -3,7 +3,7 @@
 
   "version": "0.1.0",
   "lproxy": "http://localhost:3006",
-  "proxy": "https://cosmic-chariots-backend.herokuapp.com/",
+  "proxy": "https://mjs-cosmic-chariots-app.herokuapp.com/",
 
   "private": true,
   "dependencies": {
