@@ -7,8 +7,8 @@ import { QUERY_ACTIVITY } from '../utils/queries';
 function Activity({setCurrent}) {
   const { loading, data } = useQuery(QUERY_ACTIVITY);
   const activity = data?.onBoardActivities || [];
-  console.log("data ", data)
-  console.log("activity", activity)
+  // console.log("data ", data)
+  // console.log("activity", activity)
   
   
   

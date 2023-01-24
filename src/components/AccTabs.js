@@ -1,12 +1,12 @@
 import React from "react";
 // import { Navigate, useParams } from 'react-router-dom';
-import { useQuery, useMutation } from '@apollo/client';
-import { GET_ME, QUERY_USER } from '../utils/queries';
+// import { useQuery, useMutation } from '@apollo/client';
+// import { GET_ME, QUERY_USER } from '../utils/queries';
 
 import Profile from '../components/Profile';
 import Reservations from '../components/Reservations';
 
-import Auth from '../utils/auth';
+// import Auth from '../utils/auth';
 
 export default function TabsRender() {
   const [openTab, setOpenTab] = React.useState(1);

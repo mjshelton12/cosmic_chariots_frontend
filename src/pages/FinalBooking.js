@@ -13,17 +13,17 @@ import AcctHdrImg from '../images/starship.jpg';
 export default function FinalBooking(props) {
   const navigate = useNavigate();
   const location = useLocation()
-  console.log("props", location)
+  // console.log("props", location)
   const resId = location.state.reservationId
-  console.log("resId", resId)
+  // console.log("resId", resId)
 
   const {loading,data, err} = useQuery(QUERY_RESERVATION, {
     variables: { reservationId: location.state.reservationId}
   })
 
-  console.log("resData", data)
+  // console.log("resData", data)
   const userId = Auth.getProfile().data._id
-  console.log("user", userId)
+  // console.log("user", userId)
 
   const [AddReservation, { error }] = useMutation(ADD_RESERVATION,{
     variables: {userId: userId, reservationId: resId}

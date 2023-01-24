@@ -21,7 +21,7 @@ const mission = [
       href: '#',
     },
   ]
-console.log(mission[1].name)
+// console.log(mission[1].name)
   export default function Main({setCurrent}) {
 
     return(

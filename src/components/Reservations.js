@@ -23,7 +23,7 @@ export default function Reservations() {
 
 const userId = Auth.getProfile().data.email
 
-console.log("userId ", userId)
+// console.log("userId ", userId)
 
 const { loading, data, err } = useQuery(QUERY_USER, {
     variables: { email: userId },

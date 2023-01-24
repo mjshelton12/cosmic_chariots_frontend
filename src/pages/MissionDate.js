@@ -13,14 +13,14 @@ export default function MissionDate(props) {
 
   const { loading, data } = useQuery(QUERY_MISSIONS, {});
   const missionDate = data?.missionDates|| [];
-  console.log("data", data)
-  console.log("mission dates", missionDate)
+  // console.log("data", data)
+  // console.log("mission dates", missionDate)
   const location = useLocation();
   const navigate = useNavigate();
-  const reservationId = ""
-  const anotherData = ""
+  // const reservationId = ""
+  // const anotherData = ""
 
-  console.log("props", location)
+  // console.log("props", location)
 
   const locArray = []
 
@@ -29,7 +29,7 @@ export default function MissionDate(props) {
       locArray.push(missionDate[i])
     }
   }
-  console.log("location array", locArray)
+  // console.log("location array", locArray)
 
   const [createReservation] = useMutation(CREATE_RESERVATION)
 
@@ -44,20 +44,20 @@ export default function MissionDate(props) {
   
   const handleClick = async (event) => {
     let missionId = event.target.id
-    console.log("missionId", missionId)
+    // console.log("missionId", missionId)
 
     const dateSelected = locArray.find(obj => {
       return obj._id === missionId;
     })
 
-    console.log("dateSelected", dateSelected)
+    // console.log("dateSelected", dateSelected)
 
     try {
       const {data} = await createReservation();
-      console.log("data", data)
+      // console.log("data", data)
       const anotherData = await data.createReservation._id
-      console.log("anotherData", anotherData)
-      console.log("Success!")
+      // console.log("anotherData", anotherData)
+      // console.log("Success!")
 
       const { dat } = await updateReservationMissionDate( {variables: {reservationId: data.createReservation._id, input:{ _id: dateSelected._id, date: dateSelected.date, destination: dateSelected.destination}}})
 

@@ -26,7 +26,7 @@ import Account from './pages/Account';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 // import Excursion from "./pages/Excursion";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import User from "./pages/User";
 import Launch from "./pages/Launch";
 // import Dining from "./pages/Dining";
