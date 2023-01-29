@@ -38,7 +38,7 @@ import FinalBooking from "./pages/FinalBooking";
 // import logo from './logo.svg';
 
 const url = process.env.NODE_ENV === 'development'
-  ? '/graphql' : "https://mjs-cosmic-chariots-backend.herokuapp.com/graphql";
+  ? '/graphql' : "https://mjs-cosmic-chariots-app.herokuapp.com/graphql";
 const httpLink = createHttpLink({
   uri: url,
 });

@@ -1,6 +1,5 @@
 {
   "name": "cosmic-chariots",
-
   "version": "0.1.0",
   "lproxy": "http://localhost:3006",
   "proxy": "https://cosmic-chariots-backend-app.herokuapp.com/",
