@@ -13,6 +13,8 @@
 
 ## About The Project
 
+This is a forked repository that I originally created with teammates that I have since continued to work on and improve.
+
 Cosmic Chariots is an e-commerce site that allows you to book a trip to space. Similar to booking a cruise ship, the app allows you to make a reservation on a specific launch date, choose your suite, and pick what planet excursions, on-board activities, and dining package you would like to add. You can save your location with your personal information and you will be all set to head for the stars!
 
 This repository contains the app's backend. For frontend, please click [here](https://github.com/space-frontiers/cosmic_chariots_backend).
@@ -54,26 +56,13 @@ This repository contains the app's backend. For frontend, please click [here](ht
 <br>
 
 ## Live Links: 
-* [Cosmic Chariots Website](https://cosmic-chariots.herokuapp.com/)
+* [Cosmic Chariots Website](https://mjs-cosmic-chariots.herokuapp.com/)
 * [Frontend Github Repo](https://github.com/space-frontiers/cosmic_chariots_frontend)
 * [Backend Github Repo](https://github.com/space-frontiers/cosmic_chariots_backend)
 * [Wireframe](https://whimsical.com/project-3-MtHszPZWp3vregnDn2rumE)
 * [Presentation](https://www.canva.com/design/DAFSl9j4lhA/3dUQ5uorbs5SYP3RFoaftA/view?utm_content=DAFSl9j4lhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 <br>
-
-## Team Rules:
-
-  * Support each other and listen to all ideas
-  * Communicate over slack what you are working on if not in zoom together
-  * Pitch ideas before applying/pushing
-  * Work hard and ask for help when hard work isn't enough
-  * Best ⅔ vote
-  * Have fun
-
-<br>
-
-<!-- FUTURE DEVELOPMENT AND CLOSING INFORMATION -->
 
 ## Future Development:
 
@@ -86,10 +75,13 @@ This repository contains the app's backend. For frontend, please click [here](ht
 
 ## Contact
 
+* MJ Shelton - [GitHub](https://github.com/mjshelton12)
+
+Original Fellow Teammembers:
+
 Team GitHub Page: [https://github.com/space-frontiers](https://github.com/space-frontiers)
 
 * Albert Bautista - [GitHub](https://github.com/devilarms83)
-* MJ Shelton - [GitHub](https://github.com/mjshelton12)
 * Holly Parker - [GitHub](https://github.com/hollygparker)
 
 <br>
