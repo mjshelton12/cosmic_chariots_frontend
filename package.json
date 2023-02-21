@@ -1,8 +1,8 @@
 {
   "name": "cosmic-chariots",
   "version": "0.1.0",
-  "lproxy": "http://localhost:3006",
-  "proxy": "https://cosmic-chariots-backend-app.herokuapp.com/",
+  "proxy": "http://localhost:3000",
+  "lproxy": "https://mjs-cosmic-chariots-app.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.10",
@@ -20,6 +20,7 @@
     "jwt-decode": "^2.2.0",
     "mongoose": "^6.7.2",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
     "react-flatpickr": "^3.10.13",
     "react-modal": "^3.16.1",

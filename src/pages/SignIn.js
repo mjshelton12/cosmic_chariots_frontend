@@ -111,8 +111,7 @@ const SignIn = (props) => {
                   </div>
                 </form>
                 <div className="text-gray-600 text-center mt-6">
-                  Don’t have an account?
-                  <Link to="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
+                  Don’t have an account? <Link to="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
                   {error && (
                     <div className="my-3 p-3 bg-danger text-red">
                       <span className="my-3 p-3 bg-danger text-red-500">{error.message}</span>
