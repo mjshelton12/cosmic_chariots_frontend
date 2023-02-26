@@ -67,30 +67,30 @@ export default function ReservationCard({ id }) {
     }
 
     cardData = (<div class="max-w-lg w-full lg:max-w-full lg:flex">
-    <div class="w-screen border-b border-gray-400 lg:border-l-0 lg:border-b lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-      <div class="mb-8">
-        <p class="text-sm text-gray-600 flex items-center">
+    <div className="w-screen border-b border-gray-400 lg:border-l-0 lg:border-b lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div className="mb-8">
+        <p className="text-sm text-gray-600 flex items-center">
           Launch Date {data.reservation.mission.date}
         </p>
-        <div class="text-gray-900 font-bold text-xl mb-2">
+        <div className="text-gray-900 font-bold text-xl mb-2">
           {data.reservation.mission.destination}
         </div>
-        <p class="text-gray-700 text-base">
+        <p className="text-gray-700 text-base">
           Suite: {data.reservation.room_type.suite}
         </p>
-        <p class="text-gray-700 text-base">
+        <p className="text-gray-700 text-base">
           Planet Excursions Booked: {excursions}
         </p>
-        <p class="text-gray-700 text-base">
+        <p className="text-gray-700 text-base">
           On-Board Activities Scheduled: {activities}
         </p>
-        <p class="text-gray-700 text-base">Dining Packages: {dining}</p>
+        <p className="text-gray-700 text-base">Dining Packages: {dining}</p>
       </div>
-      <div class="flex items-center justify-between">
-        <div class="text-sm">
-          <p class="text-gray-900 leading-none">See you on board soon!</p>
+      <div className="flex items-center justify-between">
+        <div className="text-sm">
+          <p className="text-gray-900 leading-none">See you on board soon!</p>
         </div>
-        <div><button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" id={data.reservation._id} onClick={handleDelete}>Delete</button></div>
+        <div><button type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" id={data.reservation._id} onClick={handleDelete}>Delete</button></div>
       </div>
     </div>
   </div>)

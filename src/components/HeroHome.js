@@ -23,14 +23,14 @@ function HeroHome(props) {
     <section className="relative">
 
 <header
-  class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+  className="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
 >
   <div
-    class="text-center relative z-30 p-5 text-2xl text-white bg-blue-800 bg-opacity-50 rounded-xl" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"
+    className="text-center relative z-30 p-5 text-2xl text-white bg-blue-800 bg-opacity-50 rounded-xl" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"
   > <br />
-    <p class="italic font-bold">Space Frontiers: Cosmic Chariots</p>
+    <p className="italic font-bold">Space Frontiers: Cosmic Chariots</p>
     <p>Galactic Adventures Company</p><br />
-    <div class="relative flex items-center justify-center content-center place-content-center" data-aos="zoom-out">
+    <div className="relative flex items-center justify-center content-center place-content-center" data-aos="zoom-out">
         <a href="#ready"><img src={ArrowDown} /></a>
     </div>
   </div>
@@ -38,7 +38,7 @@ function HeroHome(props) {
     autoPlay
     loop
     muted
-    class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+    className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
   >
     <source
       src={SpaceVideo}
@@ -78,24 +78,24 @@ function HeroHome(props) {
  
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Space Adventures Now Open!<br/>What Mission Will You Accept?</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div class="flex justify-center px-1">
-                  <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                <div className="flex justify-center px-1">
+                  <div className="rounded-lg shadow-lg bg-white max-w-sm">
                     <a onClick={()=>{toMoon()}}>
-                      <img class="rounded-t-lg" src={MoonImage} alt=""/>
-                    <div class="p-6">
-                      <h5 class="text-gray-900 text-xl font-medium mb-2">Lunar Leap</h5>
+                      <img className="rounded-t-lg" src={MoonImage} alt=""/>
+                    <div className="p-6">
+                      <h5 className="text-gray-900 text-xl font-medium mb-2">Lunar Leap</h5>
                       <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">7 Day Experience</button>
                     </div>
                     </a>
                   </div>
                 </div>
-                <div class="flex justify-center px-1">
-                  <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                <div className="flex justify-center px-1">
+                  <div className="rounded-lg shadow-lg bg-white max-w-sm">
                     <a onClick={()=>{toMars()}}>
-                      <img class="rounded-t-lg" src={MarsImage} alt="" />
-                    <div class="p-6">
-                      <h5 class="text-gray-900 text-xl font-medium mb-2">Mars Explorer</h5>
-                      <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">14 Day Experience</button>
+                      <img className="rounded-t-lg" src={MarsImage} alt="" />
+                    <div className="p-6">
+                      <h5 className="text-gray-900 text-xl font-medium mb-2">Mars Explorer</h5>
+                      <button type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">14 Day Experience</button>
                     </div>
                     </a>
                   </div>

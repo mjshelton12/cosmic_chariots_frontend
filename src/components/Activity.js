@@ -7,8 +7,8 @@ import { QUERY_ACTIVITY } from '../utils/queries';
 function Activity({setCurrent}) {
   const { loading, data } = useQuery(QUERY_ACTIVITY);
   const activity = data?.onBoardActivities || [];
-  // console.log("data ", data)
-  // console.log("activity", activity)
+  console.log("data ", data)
+  console.log("activity", activity)
   
   
   
@@ -17,7 +17,7 @@ function Activity({setCurrent}) {
     <div className="bg-white">
   
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <div class="flex content-start justify-center my-3"><a href='#' onClick={()=>setCurrent('Main')}><button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >Return to Mission Preparations</button></a></div>
+      <div className="flex content-start justify-center my-3"><a href='#' onClick={()=>setCurrent('Main')}><button type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >Return to Mission Preparations</button></a></div>
         <h2 className="text-center text-3xl mb-4">On Board Activities</h2>
 
         {/* <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 xl:gap-x-8"> */}

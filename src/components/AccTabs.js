@@ -6,7 +6,7 @@ import React from "react";
 import Profile from '../components/Profile';
 import Reservations from '../components/Reservations';
 
-// import Auth from '../utils/auth';
+import Auth from '../utils/auth';
 
 export default function TabsRender() {
   const [openTab, setOpenTab] = React.useState(1);

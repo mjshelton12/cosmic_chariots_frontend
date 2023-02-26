@@ -6,13 +6,13 @@ import { QUERY_EXCURSIONS } from "../utils/queries";
 function Excursion({ setCurrent }) {
   const { loading, data } = useQuery(QUERY_EXCURSIONS);
   const excursion = data?.excursions || [];
-  // console.log("data ", data);
-  // console.log("excursion", excursion);
+  console.log("data ", data);
+  console.log("excursion", excursion);
 
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div class="flex content-start justify-center my-3">
+        <div className="flex content-start justify-center my-3">
           <a href="#" onClick={() => setCurrent("Main")}>
             <button
               type="button"
