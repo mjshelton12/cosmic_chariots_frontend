@@ -49,7 +49,7 @@ export default function FinalBooking(props) {
           alert("Reservation booked!")
           navigate('/account')
         } else {
-          console.log("Not Logged In!")
+          window.alert("Please sign in to finalize your mission")
         }
       }
       catch (err){
@@ -65,10 +65,10 @@ export default function FinalBooking(props) {
       <Header />
 
         <div className="flex-grow">
-          <div className="relative flex items-center justify-self-center h-screen mb-12 ">
+          <div className="relative flex items-center justify-self-center h-2/4 mb-12 ">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div >
-            <div className="pt-12 md:pt-16 w-full flex flex-col h-screen text-center ">
+            <div className="pt-12 md:pt-16 w-full flex flex-col h-full text-center ">
               <img src={AcctHdrImg} className="rounded" data-aos="fade-down" />
 
               <div className="text-gray-900 font-bold text-3xl mb-2 pt-5">
@@ -82,7 +82,7 @@ export default function FinalBooking(props) {
               </p>              
             
             </div>
-            <div className="relative flex items-center justify-center content-center">
+            <div className="relative flex items-center justify-center content-center mt-20">
               <button className="rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-center font-medium text-white hover:bg-indigo-700" onClick={handleClick}>Book Reservation!</button>
             </div>
           </div>

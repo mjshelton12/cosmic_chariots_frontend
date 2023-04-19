@@ -64,17 +64,17 @@ export default function RoomType({reservationId}) {
       <div className="mx-auto max-w-2xl py-24 px-16 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div>
               <h1 className="text-5xl text-center p-9">Fly in Comfort and Style</h1>
-              <div className="flex justify-center">
+              <div className="flex justify-center gap-x-10">
               {roomType.map((roomType) => (
-                <div className="mt-1 text-lg font-medium text-gray-900 border ml-7" key={roomType._id} >
-                  <p className="mt-2 underline mb-3 mr-3 text-3xl font-medium text-gray-900 ">{roomType.suite}</p>
+                <div className="justify-center text-center mt-1 text-lg font-medium text-gray-900 border w-full rounded-md shadow-lg" key={roomType._id} >
+                  <p className="underline m-3 text-3xl font-medium text-gray-900 ">{roomType.suite}</p>
             
                   <ul>
                     Amenities include:
-                    <li className='ml-2 mx-3'>{roomType.amenities_1}</li>
-                    <li className='ml-2'>{roomType.amenities_2}</li>
-                    <li className='ml-2'>{roomType.amenities_3}</li>
-                    <li className='ml-2'>{roomType.amenities_4}</li>
+                    <li className=''>{roomType.amenities_1}</li>
+                    <li className=''>{roomType.amenities_2}</li>
+                    <li className=''>{roomType.amenities_3}</li>
+                    <li className=''>{roomType.amenities_4}</li>
                   </ul>
                   <div className="mt-1 text-lg font-medium text-black-900">{roomType.cost}</div>
                   <button className="mt-3 mb-4 ml inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700" id={roomType._id} onClick={handleClick}>Click to Choose</button>
