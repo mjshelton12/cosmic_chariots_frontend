@@ -28,7 +28,11 @@ const SignUp = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(userFormData);
+
+    if(userFormData.password.length < 5){
+      window.alert("Password too short, please try again")
+      return;
+    }
 
     // use addUser function
     try {
@@ -37,7 +41,7 @@ const SignUp = () => {
     });
 
     Auth.login(data.addUser.token);
-    navigate(-1)
+    navigate("/")
     } catch (err) {
       console.error(JSON.stringify(err,null,2));
     }
@@ -62,7 +66,7 @@ const SignUp = () => {
             {/*  Logo */}
             <div className="flex justify-center ">
               <Link to="/">
-                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="pt-10" src={Logo} alt=""/>
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className="pt-10" src={Logo} alt=""/>
               </Link>
             </div>
 

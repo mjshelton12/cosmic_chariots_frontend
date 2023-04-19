@@ -19,7 +19,7 @@ function Account() {
 
         {/*  Page sections */}
         <section
-          class="relative flex items-start justify-start h-screen mb-12 "
+          className="relative flex items-start justify-start h-screen mb-12 "
         >
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
 

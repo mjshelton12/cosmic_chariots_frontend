@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Legal(){
   return (
-    <section class="text-center">
+    <section className="text-center">
         <br />
-        <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+        <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
             {/* <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li> */}
             <li>
-                <a href="/Terms" class="mr-4 hover:underline md:mr-6" target="_blank">Terms of Use</a>
+                <a href="/Terms" className="mr-4 hover:underline md:mr-6" target="_blank">Terms of Use</a>
             </li>
             <li>
-                <a href="/Privacy" class="mr-4 hover:underline md:mr-6" target="_blank">Privacy Policy</a>
+                <a href="/Privacy" className="mr-4 hover:underline md:mr-6" target="_blank">Privacy Policy</a>
             </li>
             {/* <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>

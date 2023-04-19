@@ -104,7 +104,6 @@ function App() {
             <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
           </Routes>
         </>
-     
     </ApolloProvider>
   );
 }

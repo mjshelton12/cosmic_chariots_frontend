@@ -44,9 +44,9 @@ function Header() {
                 <>
                   <li>
                     <Link to="/account" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 capitalize">
-                      <svg className="px-1 mx-1 motion-safe:animate-pulse" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC95E" fill-rule="evenodd" d="M12 16.667 5 22l3-8-6-4.5h7.5L12 2l2.5 7.5H22L16 14l3 8z"/></svg>
+                      <svg className="px-1 mx-1 motion-safe:animate-pulse" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC95E" fillRule="evenodd" d="M12 16.667 5 22l3-8-6-4.5h7.5L12 2l2.5 7.5H22L16 14l3 8z"/></svg>
                       {Auth.getProfile().data.first_name}
-                      <svg className="px-1 mx-1 motion-safe:animate-pulse" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC95E" fill-rule="evenodd" d="M12 16.667 5 22l3-8-6-4.5h7.5L12 2l2.5 7.5H22L16 14l3 8z"/></svg>
+                      <svg className="px-1 mx-1 motion-safe:animate-pulse" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC95E" fillRule="evenodd" d="M12 16.667 5 22l3-8-6-4.5h7.5L12 2l2.5 7.5H22L16 14l3 8z"/></svg>
 
                       </Link>
                   </li>
