@@ -91,15 +91,14 @@ export default function MissionDate(props) {
           <h2 className="text-center text-5xl text-black mb-5">
             Your Mission, Should You Choose to Accept
           </h2>
-          <div className="flex justify-center items-center px-20">
-            <div className="rounded-lg shadow-lg flex gap-x-10 justify-center p-12">
+          <div className="flex justify-center items-center px-20 gap-x-10">
               {locArray.map((missionDate) => (
                 <div
-                  className="border-4 rounded-md border-blue-100 text-white"
+                  className="rounded-md shadow-lg text-white border"
                   key={missionDate._id}
                 >
-                  <div className="bg-blue-100 items-center p-6">
-                    <h3 className=" text-center underline text-3xl text-black ">
+                  <div className="items-center p-6">
+                    <h3 className="text-center underline text-3xl text-black ">
                       {missionDate.destination}
                     </h3>
                     <p className="mt-1  text-center text-lg font-medium text-black">
@@ -120,7 +119,6 @@ export default function MissionDate(props) {
                   </div>
                 </div>
               ))}
-            </div>
           </div>
         </div>
       </div>
