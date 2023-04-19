@@ -91,14 +91,14 @@ export default function MissionDate(props) {
           <h2 className="text-center text-5xl text-black mb-5">
             Your Mission, Should You Choose to Accept
           </h2>
-          <div className="flex justify-center">
-            <div className="rounded-lg shadow-lg bg-white max-w-sm">
+          <div className="flex justify-center items-center px-20">
+            <div className="rounded-lg shadow-lg flex gap-x-10 justify-center p-12">
               {locArray.map((missionDate) => (
                 <div
                   className="border-4 rounded-md border-blue-100 text-white"
                   key={missionDate._id}
                 >
-                  <div className="bg-blue-100">
+                  <div className="bg-blue-100 items-center p-6">
                     <h3 className=" text-center underline text-3xl text-black ">
                       {missionDate.destination}
                     </h3>
@@ -108,13 +108,15 @@ export default function MissionDate(props) {
                     <p className="mt-3 text-center text-xl font-lg  text-black">
                       {missionDate.description}
                     </p>
+                    <div className="flex justify-center">
                     <a
-                      className="mt-3 mb-4 ml-16 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                      className="mt-3 mb-4 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
                       id={missionDate._id}
                       onClick={handleClick}
                     >
                       Start A Reservation
                     </a>
+                    </div>
                   </div>
                 </div>
               ))}

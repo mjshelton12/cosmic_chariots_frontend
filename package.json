@@ -1,8 +1,8 @@
 {
   "name": "cosmic-chariots",
   "version": "0.1.0",
-  "proxy": "http://localhost:3000",
-  "lproxy": "https://mjs-cosmic-chariots-app.herokuapp.com/",
+  "lproxy": "http://localhost:3000",
+  "proxy": "https://mjs-cosmic-chariots-app.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.10",
