@@ -6,8 +6,6 @@ import { QUERY_EXCURSIONS } from "../utils/queries";
 function Excursion({ setCurrent }) {
   const { loading, data } = useQuery(QUERY_EXCURSIONS);
   const excursion = data?.excursions || [];
-  console.log("data ", data);
-  console.log("excursion", excursion);
 
   return (
     <div className="bg-white">

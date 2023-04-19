@@ -6,8 +6,6 @@ import { QUERY_DININGPACKAGES } from "../utils/queries";
 function Dining({ setCurrent }) {
   const { loading, data, err } = useQuery(QUERY_DININGPACKAGES);
   const dining = data?.diningPackages || [];
-  console.log("data ", data);
-  console.log("dining", dining);
   console.error(JSON.stringify(err, null, 2));
 
   return (

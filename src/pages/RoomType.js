@@ -15,13 +15,11 @@ export default function RoomType({reservationId}) {
   const location = useLocation();
   // console.log("reservationId", location.state.reservationId)
   const resId = location.state.reservationId
-  console.log("resId", resId)
 
   const navigate = useNavigate();
 
   const { loading, data } = useQuery(QUERY_ROOMTYPES);
   const roomType = data?.roomTypes || [];
-  console.log("roomType", roomType)
 
   const toFinalBooking = (resId) => {
     navigate('/finalbooking', {state:{id:1, reservationId: resId}})
@@ -33,17 +31,10 @@ export default function RoomType({reservationId}) {
 
   const  handleClick = async (event) => {
     let clickedRoom = event.target.id
-    console.log("clickedRoom", clickedRoom)
-
-    console.log("roomType", roomType)
 
     const roomSelected = roomType.find(obj => {
       return obj._id === clickedRoom;
     })
-
-    console.log("roomSelected", roomSelected)
-
-    console.log("room", myRoom)
 
     try {
       const { data } = await updateReservationRoomType({

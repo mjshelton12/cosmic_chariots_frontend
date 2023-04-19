@@ -35,14 +35,13 @@ export default function Profile() {
     })
 
     const email = Auth.getProfile().data.email
-    console.log(email)
 
     const { loading, data, err } = useQuery(QUERY_USER, {
         variables: { email: email },
     });
 
     let userdata = data?.user || {};
-    console.log("userdata", userdata)
+    
     const first_name = userdata.first_name
     const last_name = userdata.last_name
     const phone_number = userdata.phone_number

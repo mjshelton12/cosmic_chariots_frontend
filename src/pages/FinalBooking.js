@@ -65,25 +65,25 @@ export default function FinalBooking(props) {
       <Header />
 
         <div className="flex-grow">
-          <div class="relative flex items-center justify-self-center h-screen mb-12 ">
+          <div className="relative flex items-center justify-self-center h-screen mb-12 ">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div >
             <div className="pt-12 md:pt-16 w-full flex flex-col h-screen text-center ">
               <img src={AcctHdrImg} className="rounded" data-aos="fade-down" />
 
-              <div class="text-gray-900 font-bold text-3xl mb-2 pt-5">
+              <div className="text-gray-900 font-bold text-3xl mb-2 pt-5">
                 {data.reservation.mission.destination}
               </div>
-              <p class="text-blue-500 text-xl">
+              <p className="text-blue-500 text-xl">
                 Launch Date: {data.reservation.mission.date}
               </p>
-              <p class="text-blue-500 text-xl">
+              <p className="text-blue-500 text-xl">
                 Suite: {data.reservation.room_type.suite}
               </p>              
             
             </div>
-            <div class="relative flex items-center justify-center content-center">
-              <button class="rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-center font-medium text-white hover:bg-indigo-700" onClick={handleClick}>Book Reservation!</button>
+            <div className="relative flex items-center justify-center content-center">
+              <button className="rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-center font-medium text-white hover:bg-indigo-700" onClick={handleClick}>Book Reservation!</button>
             </div>
           </div>
         </div>
