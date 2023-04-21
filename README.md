@@ -79,10 +79,11 @@ This repository contains the app's backend. For frontend, please click [here](ht
 
 Original Fellow Teammembers:
 
-Team GitHub Page: [https://github.com/space-frontiers](https://github.com/space-frontiers)
-
 * Albert Bautista - [GitHub](https://github.com/devilarms83)
 * Holly Parker - [GitHub](https://github.com/hollygparker)
+
+
+Team GitHub Page: [https://github.com/space-frontiers](https://github.com/space-frontiers)
 
 <br>
 
